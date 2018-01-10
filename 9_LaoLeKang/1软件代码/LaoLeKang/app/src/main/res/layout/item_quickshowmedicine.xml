@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/mshow_shape"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/pill"/>
+
+        <ImageView
+            android:id="@+id/mshow_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medicine_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/mshow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="药物名称"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mshow_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="一日三次 无餐饮说明"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/medicine_off_on"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:textOff="关"
+            android:textOn="开"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:switchMinWidth="50dp"
+            android:checked="true"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:clickable="true"/>
+
+
+
+</RelativeLayout>

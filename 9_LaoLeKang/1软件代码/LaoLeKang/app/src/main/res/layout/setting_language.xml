@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/transparent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="语  言"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_gray" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_above="@+id/view2"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/six_selected" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/rreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@+id/tab_title"
+        android:background="@color/transparent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:srcCompat="@mipmap/arrow_back_white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="跟随系统"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/checkedTextView"
+        app:layout_constraintEnd_toEndOf="@+id/checkedTextView"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="@+id/checkedTextView"
+        app:layout_constraintTop_toTopOf="@+id/checkedTextView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="328dp" />
+
+</android.support.constraint.ConstraintLayout>

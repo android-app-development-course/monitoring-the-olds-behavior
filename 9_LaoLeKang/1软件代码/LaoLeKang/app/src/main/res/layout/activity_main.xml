@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_below="@+id/tab_title"
+        android:layout_alignParentStart="true">
+    </FrameLayout>
+
+    <!--底部导航栏-->
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Snow"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!--第一个-->
+        <TextView
+            android:id="@+id/txt_pperson"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/half_tansparent"
+            android:drawableTop="@drawable/menu_person"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:text="个人中心"/>
+
+        <!--第二个-->
+        <TextView
+            android:id="@+id/txt_mmedicine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/half_tansparent"
+            android:drawableTop="@drawable/menu_clock"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:text="用药提醒"/>
+
+        <!--第三个-->
+        <TextView
+            android:id="@+id/txt_hhome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/half_tansparent"
+            android:drawableTop="@drawable/menu_home"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:text="主页"/>
+
+        <!--第四个-->
+        <TextView
+            android:id="@+id/txt_hhealth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/half_tansparent"
+            android:drawableTop="@drawable/menu_heart"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:text="健康数据"/>
+
+        <!--第五个-->
+        <TextView
+            android:id="@+id/txt_ccall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/half_tansparent"
+            android:drawableTop="@drawable/menu_call"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:text="紧急呼叫"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/transparent"
+        android:layout_above="@id/tab_menu"/>
+
+</RelativeLayout>

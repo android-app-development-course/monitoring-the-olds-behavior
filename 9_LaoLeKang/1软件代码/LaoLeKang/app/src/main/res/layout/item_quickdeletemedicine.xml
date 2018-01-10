@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout_d">
+
+        <ImageView
+            android:id="@+id/mdel_shape"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/pill"/>
+
+        <ImageView
+            android:id="@+id/mdel_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medicine_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2_d"
+        android:layout_alignTop="@+id/linearLayout_d"
+        android:layout_toEndOf="@+id/linearLayout_d">
+
+        <TextView
+            android:id="@+id/mdel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="药物名称"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mdel_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="一日三次 无餐饮说明"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/mdel_imbtn_del"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mdelete"
+        android:layout_alignTop="@+id/linearLayout2_d"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+</RelativeLayout>

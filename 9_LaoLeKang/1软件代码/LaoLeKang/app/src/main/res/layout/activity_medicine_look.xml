@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phemie.scnu.laolekang.Fragment2.medicineLook">
+
+    <include android:id="@+id/medicineLookTitle" layout="@layout/addmedicine_title"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/medicineLookTitle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/im_medicinelook" />
+
+    <RadioGroup
+        android:id="@+id/medicineShapeRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_medicinelook"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rbtn_pill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="默认样式"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_shape1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="样式1" />
+        <RadioButton
+            android:id="@+id/rbtn_shape2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="样式2" />
+        <RadioButton
+            android:id="@+id/rbtn_shape3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="样式3" />
+        <RadioButton
+            android:id="@+id/rbtn_shape4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="样式4" />
+        <RadioButton
+            android:id="@+id/rbtn_shape5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickShape"
+            android:text="样式5" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/im_medicineColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/medicine_white"
+        android:layout_below="@+id/medicineShapeRG"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/medicineColorRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_medicineColor"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rbtn_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="默认颜色（白色）"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="黑色" />
+        <RadioButton
+            android:id="@+id/rbtn_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="棕色" />
+        <RadioButton
+            android:id="@+id/rbtn_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="绿色" />
+        <RadioButton
+            android:id="@+id/rbtn_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="橙色" />
+        <RadioButton
+            android:id="@+id/rbtn_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickColor"
+            android:text="粉色" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/item_detail_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="上午"/>
+
+
+    <TextView
+        android:id="@+id/item_detail_moment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="08:00"
+        android:layout_alignBaseline="@+id/item_detail_period"
+        android:layout_alignBottom="@+id/item_detail_period"
+        android:layout_toEndOf="@+id/item_detail_period" />
+
+
+        <TextView
+            android:id="@+id/item_detail_dining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="无餐饮说明"
+            android:layout_alignTop="@+id/item_detail_moment"
+            android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

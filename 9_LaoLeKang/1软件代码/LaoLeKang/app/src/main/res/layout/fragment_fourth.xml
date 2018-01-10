@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:context="com.phemie.scnu.laolekang.Fragment4.FourthFragment">
+
+
+    <!--顶部大的信息栏-->
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/transparent">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="健康数据 "
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_gray" />
+    </RelativeLayout>
+
+
+
+    <!--分界线-->
+    <com.phemie.scnu.laolekang.CircleImageView
+        android:id="@+id/figure"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/tab_title"
+        android:layout_centerHorizontal="true"
+        app:outCircleColor="#990066"
+        app:outCircleWidth="5dp"
+        app:srcCompat="@drawable/figure" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_one"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/figure"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/healthheart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/hhhheart"
+                android:padding="12dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_two"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cv_one"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/healthfoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rrrrrun"
+                android:padding="12dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_three"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cv_two"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/healthlocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mmmap"
+                android:padding="12dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

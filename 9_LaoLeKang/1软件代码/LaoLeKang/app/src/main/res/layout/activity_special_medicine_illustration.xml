@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phemie.scnu.laolekang.Fragment2.SpecialMedicineIllustration">
+
+    <include android:id="@+id/specialMedicineIllustrationTitle" layout="@layout/addmedicine_title"/>
+
+    <EditText
+        android:id="@+id/medicineIllustrationContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="150dp"
+        android:hint="请在此输入特殊说明内容"
+        android:layout_below="@+id/specialMedicineIllustrationTitle"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="200"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最大输入200字"
+        android:textStyle="bold"
+        android:textColor="@color/text_gray"
+        android:layout_below="@+id/medicineIllustrationContext"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

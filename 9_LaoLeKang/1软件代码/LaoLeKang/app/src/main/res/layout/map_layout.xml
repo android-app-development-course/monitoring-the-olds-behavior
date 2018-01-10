@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment4.Health.Map.MapActivity">
+
+
+
+    <!--顶部大的信息栏-->
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/transparent">
+
+
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="当前定位 "
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/rreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tab_title"
+        android:background="@color/transparent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:srcCompat="@mipmap/arrow_back_white" />
+
+    <TextView
+        android:id="@+id/locate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tab_title"
+        android:background="@color/hhome_blue"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/locate"
+        android:layout_marginLeft="5dp"
+        android:gravity="bottom"
+        android:text="在"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ed_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mapView"
+        android:layout_toEndOf="@+id/textView4"
+        android:ems="3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/mapView"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/ed_city"
+        android:gravity="bottom"
+        android:text="搜索"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/ed_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mapView"
+        android:layout_toEndOf="@+id/textView5"
+        android:ems="5" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/locate"
+        android:background="@color/red"
+        android:text="开始检索"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--地图控件要放在最开始，否则其他像信息栏类的控件会看不到-->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView4"/>
+
+    <cc.trity.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="420dp"
+        app:fab_addButtonSize="mini"
+        app:fab_expandDirection="left">
+
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Map_myLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#24d63c"
+            app:fab_icon="@drawable/health_my_location"
+            app:fab_size="normal" />
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Map_myWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#d92410"
+            app:fab_icon="@drawable/health_my_way"
+            app:fab_size="normal" />
+
+
+    </cc.trity.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">老乐康</string>
+    <string name="day">1</string>
+    <string name="year">2017年</string>
+    <string name="month">12月</string>
+    <string name="weekday">周五</string>
+    <string name="attributeDefault">未设置</string>
+
+
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="progressBarWidth">17dp</dimen>
+    <dimen name="backgroundProgressBarWidth">10dp</dimen>
+
+</resources>

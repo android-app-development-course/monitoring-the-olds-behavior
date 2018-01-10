@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addMedicineMainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phemie.scnu.laolekang.Fragment2.AddMedicinePage">
+
+    <include android:id="@+id/addMedicineTitle" layout="@layout/addmedicine_title"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/addMedicineTitle">
+
+    <LinearLayout
+        android:id="@+id/addMedicineContext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="药物名称"/>
+
+            <EditText
+                android:id="@+id/medicine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+<include layout="@layout/separation"/>
+
+        <include android:id="@+id/medicineScale" layout="@layout/attribute_item"/>
+        <include layout="@layout/separation"/>
+        <include android:id="@+id/medicineLook" layout="@layout/attribute_item"/>
+        <include layout="@layout/separation"/>
+<include android:id="@+id/medicineDosage"  layout="@layout/input_item"/>
+        <include layout="@layout/separation"/>
+        <include layout="@layout/separation"/>
+<include android:id="@+id/startDate" layout="@layout/date_item"/>
+        <include layout="@layout/separation"/>
+<include android:id="@+id/endDate" layout="@layout/date_item"/>
+        <include layout="@layout/separation"/>
+        <include layout="@layout/separation"/>
+        <include android:id="@+id/frequency" layout="@layout/attribute_item"/>
+        <include layout="@layout/separation"/>
+        <include layout="@layout/separation"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailFrequencyList"
+            android:divider="#d9d9d9"
+            android:dividerHeight="2dp">
+
+        </ListView>
+        <include layout="@layout/separation"/>
+        <include layout="@layout/separation"/>
+        <include android:id="@+id/specialMedicineIllustration" layout="@layout/attribute_item"/>
+        <include layout="@layout/separation"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>

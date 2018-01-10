@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/transparent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="家庭住址"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_gray" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_above="@+id/view2"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/six_selected" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/rreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@+id/tab_title"
+        android:layout_alignParentStart="true"
+        android:background="@color/transparent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:srcCompat="@mipmap/arrow_back_white" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="家庭住址"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:layout_editor_absoluteX="132dp" />
+
+    <EditText
+        android:id="@+id/firstFragment_setaddress"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入您的家庭住址"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_editor_absoluteX="43dp" />
+</android.support.constraint.ConstraintLayout>

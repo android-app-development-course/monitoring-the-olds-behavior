@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phemie.scnu.laolekang.Fragment2.Drug_specification">
+
+    <include android:id="@+id/drugSpecTitle" layout="@layout/addmedicine_title"/>
+
+    <RadioGroup
+        android:id="@+id/specRG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/drugSpecTitle"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rbtn_piece"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="片"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_graininess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="粒"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_ml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="毫升"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="毫克"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_drops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="滴"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_bursiform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="袋"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_spoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="勺"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_doliform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="瓶"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="次"/>
+    </RadioGroup>
+
+</RelativeLayout>

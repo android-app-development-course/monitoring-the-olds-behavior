@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment4.Health.FootStep.StepActivity">
+
+    <!--顶部大的信息栏-->
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="步数监测 "
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/rreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tab_title"
+        android:background="@color/transparent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:srcCompat="@mipmap/arrow_back_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="87dp"
+            android:drawableLeft="@mipmap/home_statistical"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="查看历史步数"
+            android:textColor="#333333" />
+
+
+        <TextView
+            android:id="@+id/tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_data"
+            android:layout_alignBottom="@+id/tv_data"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="51dp"
+            android:drawableLeft="@mipmap/home_question_mark"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="设置锻炼计划"
+            android:textColor="#333333" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/myCicularProgressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tv_set"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:cpb_background_progressbar_color="#8FBC8F"
+            app:cpb_background_progressbar_width="6dp"
+            app:cpb_progressbar_color="#3CB371"
+            app:cpb_progressbar_width="10dp" />
+
+        <me.grantland.widget.AutofitLayout
+            android:id="@+id/auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_set"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/myStep"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="20000"
+                android:textColor="#20B2AA"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </me.grantland.widget.AutofitLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auto"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="步数"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@id/myCicularProgressBar"
+            android:layout_margin="5dp"
+            android:background="#20B2AA" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

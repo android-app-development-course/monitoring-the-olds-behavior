@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1AD9C5</color>
+    <color name="colorPrimaryDark">#088D7F</color>
+    <color name="colorAccent">#F14545</color>
+
+    <color name="medicine_background">#00CED1</color>
+
+    <color name="text_blue">#0E53A7</color>
+    <color name="text_gray">#666666</color>
+
+    <color name="main">#1AD9C4</color>
+
+    <color name="medicine_gray">#4B4B4B</color>
+
+
+    <color name="pperson_blue">#13227a</color>
+    <color name="mmedicine_yellow">#f4ea2a</color>
+    <color name="hhome_blue">#1296db</color>
+    <color name="hhealth_red">#d81e06</color>
+    <color name="ccall_green">#1afa61</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="progressBarColor">#1AD9C5</color>
+    <color name="backgroundProgressBarColor">#666666</color>
+
+
+    <color name="yellow">#fd9c06</color>
+    <color name="red">#EE2C2C</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="white">#F5F5F5</color>
+    <color name="color_one">#FDE4BB</color>
+    <color name="color_two">#fcd2a1</color>
+    <color name="color_three">#EF8273</color>
+
+
+    <color name="half_tansparent">#11000000</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Snow">#FFFAFA</color>
+
+    <!-- 陈康富-->
+    <color name="bgColor">#088d7f</color>
+    <color name="hintColor">#9dd6cc</color>
+    <color name="color3">#7aece0</color>
+    <color name="color4">#088d7f</color>
+
+</resources>
